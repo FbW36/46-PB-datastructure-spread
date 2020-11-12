@@ -45,5 +45,5 @@ function isWhole(){
     let average = sum / argumentsArray.length;
     return average%1===0?true:false;
 }
-
-console.log(isWhole(2,2));
+let array=[2,2]
+console.log(isWhole(...array));
