@@ -20,24 +20,14 @@ console.log(copiedArr);
 // 3. Find the Largest...
 // Create a function to find the largest number in an array.
 const largest = (array) => {
-  for (let i = 0; i < array.length; i++) {
-    let largNum = array[i];
-    if (largNum > array[i + 1]) {
-      return largNum;
-    }
-  }
+  return Math.max(...array);
 };
 console.log(largest([2, 5, 93, 55, 78, 20]));
 
 // 4. Find the Smallest
 // Create a function to find the smallest number in an array.
 const smallest = (array) => {
-  for (let i = 0; i < array.length; i++) {
-    let num = array[i];
-    if (num < array[i + 1]) {
-      return num;
-    }
-  }
+  return Math.min(...array);
 };
 console.log(smallest([2, 5, 93, 55, 78, 20]));
 
@@ -61,3 +51,20 @@ name = "Darren";
 role = "IT";
 
 console.log(`name: ${name}, role: ${role}`);
+
+////* Bonus: 6. Is the average a whole number?
+// Create a function that takes 4 integers as parameters and returns true or false depending on whether the average of all the arguments is a whole number or not.
+function isWhole(num1, num2, num3, num4) {
+  let average = (num1 + num2 + num3 + num4) / 4;
+  if (Number.isInteger(average)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isWhole(1, 2, 3, 4));
+console.log(isWhole(9, 2, 2, 5));
+console.log(isWhole(9, 3, 3, 5));
+
+//Once you have created a function, pass in an array as an argument which contains four elements - check if this method still outputs the correct result!
+console.log(isWhole([9, 3, 3, 5])); // This does't work , beacuse this only contains one argument
