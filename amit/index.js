@@ -20,19 +20,11 @@ console.log(copiedArrayOfnewcountries);
 
 // 3 Once again create two arrays. Save all elements of both arrays to another variable.
 let givenNumbers = [10, 20, 100];
-function findLargestnum(gnum) {
-  return Math.max(...gnum);
-}
-
-console.log(findLargestnum(givenNumbers));
+console.log("largestNum=", Math.max(...givenNumbers));
 
 // 4 Create a function to find the smallest number in an array.
 let givenNumbers2 = [10, 20, 100];
-function findLargestnum2(gnum) {
-  return Math.min(...gnum);
-}
-
-console.log(findLargestnum2(givenNumbers2));
+console.log("smallestNum=", Math.min(...givenNumbers2));
 
 // 5
 const person = { name: "John" };
@@ -55,7 +47,7 @@ role = "Doctor";
 console.log("changed value of employee = ", { name2, role });
 
 // 6: Is the average a whole number?
-
+let givenNum = [1, 2, 3, 4];
 function isWholenum(num1, num2, num3, num4) {
   avarageOfnums = (num1 + num2 + num3 + num4) / 4;
 
@@ -66,5 +58,5 @@ function isWholenum(num1, num2, num3, num4) {
   }
 }
 
-console.log(isWholenum(1, 2, 3, 4)); // 2.5 = false
+console.log(isWholenum(...givenNum)); // 2.5 = false
 console.log(isWholenum(2, 2, 2, 2)); // 2 = true
