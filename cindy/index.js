@@ -55,12 +55,22 @@ console.log(employee1)
 //     isWhole(1, 2, 3, 4) ➞ false
 //     isWhole(9, 2, 2, 5) ➞ false
 //     Once you have created a function, pass in an array as an argument which contains four elements - check if this method still outputs the correct result!
-const isWhole = [1, 2, 3, 4];
-const isWholeOrNot = (eval(isWhole.join('+'))/isWhole.length)
-if(typeof isWholeOrNot === Number) {
-    console.log(true)
-}else{
-    console.log(false)
+// const isWhole = [1, 2, 3, 4];
+// const isWholeOrNot = (eval(isWhole.join('+'))/isWhole.length)
+// if(typeof isWholeOrNot ===  Number) {
+//     console.log(false)
+// }else{
+//     console.log(true)
+// }
+function isWhole(a,b,c,d){
+    const isNumber = (a+b+c+d)/(4)
+    if(Number.isInteger(isNumber)){
+        console.log(true)
+    }else{
+        console.log(false)
+    }
 }
+isWhole(1, 2, 3, 4)
+isWhole(2, 2, 2, 2)
 //      isWhole(1, 2, 3, 4) ➞ false Yep
 //     isWhole(9, 2, 2, 5) ➞ false Yep 
