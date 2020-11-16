@@ -46,4 +46,4 @@ console.log(isWhole(1, 2, 3 ,4)) // false
 console.log(isWhole(9, 2, 2 ,5)) // false
 console.log(isWhole(7, 2, 3 ,4)) // true
 
-console.log(isWhole([7, 2, 3 ,4]) // the first element is the array and the others are undefined
+console.log(isWhole([7, 2, 3 ,4])) // the first element is the array and the others are undefined
